@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class Settings : MonoBehaviour
+public class setmen : MonoBehaviour
 {
-
     public Dropdown resolutionDropdown;
     public Dropdown highDropdown;
 
@@ -19,7 +16,7 @@ public class Settings : MonoBehaviour
         resolutions = Screen.resolutions;
         int currentResolutionIndex = 0;
 
-        for(int i = 0; i < resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height + " " + resolutions[i].refreshRate + "Hz";
             options.Add(option);
@@ -34,7 +31,7 @@ public class Settings : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
-    public void SetResolution (int resolutionIndex)
+    public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
@@ -54,6 +51,6 @@ public class Settings : MonoBehaviour
         if (PlayerPrefs.HasKey("FullscreenPreference"))
             Screen.fullScreen = System.Convert.ToBoolean(PlayerPrefs.GetInt("FullscreenPreference"));
         else
-            Screen.fullScreen    = true;
+            Screen.fullScreen = true;
     }
 }
