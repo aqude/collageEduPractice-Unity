@@ -17,11 +17,6 @@ public class PlayerMove : MonoBehaviour
     // Хранение позиции
     private Vector2 movement;
 
-    // Стрельба
-    public Transform shotPoint;
-    public GameObject bullet;
-    private float timeBtwShots;
-    public float StartTimeBtwShots;
     void Update()
     {
         // Дает нам информацию о движениях
@@ -32,16 +27,7 @@ public class PlayerMove : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        // Стрельба
-        if (timeBtwShots <= 0) {
-            if (Input.GetMouseButton(0)) {
-                Instantiate(bullet, shotPoint.position, transform.rotation);
-                timeBtwShots = StartTimeBtwShots;
-            }
-        }
-        else {
-            timeBtwShots -= Time.deltaTime;
-        }
+        
         
             
     }
