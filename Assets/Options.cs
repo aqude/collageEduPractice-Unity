@@ -28,12 +28,16 @@ public class Settings : MonoBehaviour
         }
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.RefreshShownValue();
-        LoadSettings(currentResolutionIndex);
+       // LoadSettings(currentResolutionIndex);
     }
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
     }
- 
+    public void SetResolution (int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
 
 }

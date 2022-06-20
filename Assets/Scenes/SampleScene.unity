@@ -189,7 +189,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 3.3333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &62790340
@@ -864,7 +864,7 @@ SpriteRenderer:
   m_Size: {x: 0.3, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1677465930
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 1821409697}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPoint: {fileID: 1005178921}
   bullet: {fileID: 228499603}
-  StartTimeBtwShots: 0
+  StartTimeBtwShots: 0.25
   offset: -90
 --- !u!212 &1994135561
 SpriteRenderer:
@@ -1194,7 +1194,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 3.3333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2074448238
