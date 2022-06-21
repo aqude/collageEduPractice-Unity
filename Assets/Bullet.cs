@@ -14,12 +14,11 @@ public class Bullet : MonoBehaviour
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
         
         if (hitInfo.collider != null) {
-            Destroy(gameObject);
-            // if (hitInfo.collider.CompareTag("Enemy")) {
-            //     hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
-            // }
             
-
+            if (hitInfo.collider.CompareTag("Enemy")) {
+                hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
+            }
+            Destroy(gameObject);
             // if (hitInfo.collider == hitInfo.collider.CompareLayer("Solid")) {
             //     Destroy(gameObject);
             // }
