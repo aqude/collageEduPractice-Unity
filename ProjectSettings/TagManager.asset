@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BackGraund
   - Enemy
+  - Block
+  - Wall
   layers:
   - Default
   - TransparentFX
