@@ -16,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     // Хранение позиции
     private Vector2 movement;
+    public float health;
 
     void Update()
     {
