@@ -11,6 +11,7 @@ TagManager:
   - RoomPoint
   - Rooms
   - FxTemporaire
+  - Weapon
   layers:
   - Default
   - TransparentFX
